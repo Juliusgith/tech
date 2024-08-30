@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container my-5">
+        <!-- Leave a Comment Section -->
+        
+        <!-- About Me Section -->
+        <div class="text-center bg-primary text-white p-5 rounded">
+            <h1 style=" color: yellow;">About Me</h1>
+            <p style="color: white;">I specialize in creating premium websites for service-based businesses, personal brands, non-profits, and professionals.</p>
+            <p style="color: white;">My goal is to transform your online presence with websites designed for better branding, marketing, and support, allowing you to grow your business with confidence.</p>
+        </div>
+
+        <!-- My Mission Section -->
+        <div class="bg-light p-5 my-5 rounded shadow">
+            <h2 class="text-center" style=" color: blue;">My Mission</h2>
+            <p class="text-center">I strive to craft visually stunning, user-friendly websites that showcase your business brand, enhance client engagement, and improve sales.</p>
+            <p class="text-center">With a focus on comprehensive web solutions, my mission is to help you achieve your business goals by providing exceptional service and unparalleled expertise.</p>
+        </div>
+
+        <!-- Profile Section -->
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="text-primary">Meet Julius Achora</h2>
+                <p>Hi! I'm Julius Achora. After graduating from Metropolitan International University class of Science and Technology, I understand the importance of having a robust online presence.</p>
+                <p>My job is to help business owners who value this presence to achieve their goals.</p>
+                <p>I collaborate with a team of highly skilled and passionate individuals in graphic design and copywriting to provide you with the best value and results.</p>
+                <p>My web design services were born out of a passion for helping service businesses overcome the challenge of client acquisition.</p>
+                <p>Recognizing that over 80% of potential customers are online, I saw an incredible opportunity to leverage the Internet for client acquisition and business growth.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="{% static 'images/juli.jpg' %}" alt="Vince Comfort" class="rounded-circle img-fluid mb-3" style="width: 150px; height: 150px;">
+                <div class="bg-light p-3 rounded shadow">
+                    <p>I’m always looking for business owners who need my help. If you think getting your business or your message out there is important for your business or your brand, get in touch so that I can help you put together a plan that will put you in front of your target audience, and improve your chances of getting clients.</p>
+                    <a href="#" class="btn btn-primary">Reach Out Now!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

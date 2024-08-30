@@ -1,0 +1,569 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+<div class="banner d-flex justify-content-center align-items-center text-center">
+    <div class="inner">
+        <h1 class="gradient-text-1">NEXT GENERATION</h1>
+        <h1 class="gradient-text-2">TECHNOLOGY</h1>
+        <p class="ptn">See what makes us different</p>
+        <a href="#" class="btn btn-outline-primary" style="color: yellow;">Get Started</a>
+
+    </div>
+</div>
+<section class="d-flex align-items-center justify-content-center" style="min-height: 40vh;">
+    <div class="container text-center">
+        <h2 class="mb-2">Artificial Intelligence (AI)</h2>
+        <p class="lead mt-1">Artificial Intelligence is revolutionizing how businesses operate, from automating routine tasks to providing insights through advanced data analysis. AI's applications are vast, including healthcare, finance, marketing, and more.</p>
+    </div>
+</section>
+
+
+<section class="container my-0">
+    <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- First slide -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card card-fixed-size">
+                            <div class="img-overlay">
+                                <img src="{% static 'images/gen.jpg' %}" class="card-img-top img-zoom" alt="gen.jpg">
+                                <div class="overlay-text">
+                                    <div class="marquee">
+                                        <h5 class="card-title">AI Generator</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card card-fixed-size">
+                            <div class="img-overlay">
+                                <img src="{% static 'images/robot.jpg' %}" class="card-img-top img-zoom" alt="optic.jpg">
+                                <div class="overlay-text">
+                                    <div class="marquee">
+                                        <h5 class="card-title">Robotic</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card card-fixed-size">
+                            <div class="img-overlay">
+                                <img src="{% static 'images/int.jpg' %}" class="card-img-top img-zoom" alt="int.jpg">
+                                <div class="overlay-text">
+                                    <div class="marquee">
+                                        <h5 class="card-title">Intelligience</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card card-fixed-size">
+                            <div class="img-overlay">
+                                <img src="{% static 'images/net.jpg' %}" class="card-img-top img-zoom" alt="net.jpg">
+                                <div class="overlay-text">
+                                    <div class="marquee">
+                                        <h5 class="card-title">Connectivity</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second slide -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card card-fixed-size">
+                            <div class="img-overlay">
+                                <img src="{% static 'images/logy.jpg' %}" class="card-img-top img-zoom" alt="logy.jpg">
+                                <div class="overlay-text">
+                                    <div class="marquee">
+                                        <h5 class="card-title">Technology Advanced</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card card-fixed-size">
+                            <div class="img-overlay">
+                                <img src="{% static 'images/rob.jpg' %}" class="card-img-top img-zoom" alt="rob.jpg">
+                                <div class="overlay-text">
+                                    <div class="marquee">
+                                        <h5 class="card-title">AI Robotic</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card card-fixed-size">
+                            <div class="img-overlay">
+                                <img src="{% static 'images/Network.jpg' %}" class="card-img-top img-zoom" alt="tech.jpg">
+                                <div class="overlay-text">
+                                    <div class="marquee">
+                                        <h5 class="card-title">Networking</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card card-fixed-size">
+                            <div class="img-overlay">
+                                <img src="{% static 'images/optic.jpg' %}" class="card-img-top img-zoom" alt="robot.jpg">
+                                <div class="overlay-text">
+                                    <div class="marquee">
+                                        <h5 class="card-title">Connectivity the World</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<!-- CSS -->
+<style>
+    .card-fixed-size {
+        height: 350px; /* Fixed height for the cards */
+        width: 100%; /* Full width of the column */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .img-overlay {
+        position: relative;
+        overflow: hidden;
+        height: 100%; /* Ensure the image covers the card height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-zoom {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; /* Ensures the image covers the entire card without distortion */
+        transition: transform 0.3s ease;
+    }
+
+    .overlay-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    .marquee {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .marquee h5 {
+        display: inline-block;
+        animation: marquee 30s linear infinite; /* Set duration for slower scrolling */
+    }
+
+    @keyframes marquee {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    .img-overlay:hover .img-zoom {
+        transform: scale(1.1);
+    }
+
+    /* Media query to ensure consistent card size on smaller devices */
+    @media (max-width: 768px) {
+        .card-fixed-size {
+            height: 250px; /* Adjust height for smaller devices */
+        }
+    }
+</style>
+
+<section class="d-flex align-items-center justify-content-center" style="min-height: 40vh;">
+    <div class="container text-center">
+        <h2 class="mb-2">Blockchain Technology</h2>
+        <p class="lead mt-1">Blockchain technology is changing the way we think about security and transparency. By creating decentralized, tamper-proof systems, blockchain is enabling trustless transactions and secure information exchange.</p>
+    </div>
+</section>
+
+<div class="marquee-container">
+    <div class="marquee">
+        <div class="marquee-row left-to-right">
+            <div class="card">
+                <img src="{% static 'images/check.jpg' %}" class="card-img" alt="check.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/block.jpg' %}" class="card-img" alt="block.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/blo.jpg' %}" class="card-img" alt="blo.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/coin.jpg' %}" class="card-img" alt="coin.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/cyp.jpg' %}" class="card-img" alt="cyp.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/fnt.jpg' %}" class="card-img" alt="fnt.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/business.jpg' %}" class="card-img" alt="business.jpg">
+            </div>
+            <!-- Repeat the images to ensure continuous scrolling -->
+            <div class="card">
+                <img src="{% static 'images/check.jpg' %}" class="card-img" alt="check.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/block.jpg' %}" class="card-img" alt="block.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/blo.jpg' %}" class="card-img" alt="blo.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/coin.jpg' %}" class="card-img" alt="coin.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/cyp.jpg' %}" class="card-img" alt="cyp.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/fnt.jpg' %}" class="card-img" alt="fnt.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/business.jpg' %}" class="card-img" alt="business.jpg">
+            </div>
+        </div>
+        <div class="marquee-row right-to-left">
+            <div class="card">
+                <img src="{% static 'images/check.jpg' %}" class="card-img" alt="check.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/block.jpg' %}" class="card-img" alt="block.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/blo.jpg' %}" class="card-img" alt="blo.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/coin.jpg' %}" class="card-img" alt="coin.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/cyp.jpg' %}" class="card-img" alt="cyp.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/fnt.jpg' %}" class="card-img" alt="fnt.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/business.jpg' %}" class="card-img" alt="business.jpg">
+            </div>
+            <!-- Repeat the images to ensure continuous scrolling -->
+            <div class="card">
+                <img src="{% static 'images/check.jpg' %}" class="card-img" alt="check.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/block.jpg' %}" class="card-img" alt="block.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/blo.jpg' %}" class="card-img" alt="blo.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/coin.jpg' %}" class="card-img" alt="coin.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/cyp.jpg' %}" class="card-img" alt="cyp.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/fnt.jpg' %}" class="card-img" alt="fnt.jpg">
+            </div>
+            <div class="card">
+                <img src="{% static 'images/business.jpg' %}" class="card-img" alt="business.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Trigger Button (Hidden) -->
+<button type="button" id="popupTrigger" class="d-none" data-bs-toggle="modal" data-bs-target="#popupModal">
+    Open Popup
+</button>
+
+<!-- Modal Structure -->
+<div class="modal fade" id="popupModal" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="popupModalLabel">Julius TEch Advertisement</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Image Content -->
+                <section class="container my-0 mb-5">
+                    <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- First slide -->
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card card-fixed-size">
+                                            <div class="img-overlay">
+                                                <img src="{% static 'images/shot.jpg' %}" class="card-img-top img-zoom" alt="shot.jpg">
+                                                <div class="overlay-text">
+                                                    <h5 class="card-title">AI Image Generator</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card card-fixed-size">
+                                            <div class="img-overlay">
+                                                <img src="{% static 'images/tm.jpg' %}" class="card-img-top img-zoom" alt="tm.jpg">
+                                                <div class="overlay-text">
+                                                    <h5 class="card-title">Another Image</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Second slide (hidden initially) -->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card card-fixed-size">
+                                            <div class="img-overlay">
+                                                <img src="{% static 'images/962.jpg' %}" class="card-img-top img-zoom" alt="img3.jpg">
+                                                <div class="overlay-text">
+                                                    <h5 class="card-title">Third Image</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="card card-fixed-size">
+                                            <div class="img-overlay">
+                                                <img src="{% static 'images/programming.jpg' %}" class="card-img-top img-zoom" alt="img4.jpg">
+                                                <div class="overlay-text">
+                                                    <h5 class="card-title">Fourth Image</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Trigger the popup modal after 1 second
+    setTimeout(function() {
+        document.getElementById("popupTrigger").click();
+    }, 1000); // Delay of 1 second before the popup appears
+
+    // Automatically transition to the second set of images after 4 seconds
+    setTimeout(function() {
+        $('#customCarousel').carousel('next');
+    }, 4000); // Delay of 4 seconds for the image transition
+});
+</script>
+
+<section>
+
+</section>
+
+<div class="container">
+    <div class="row justify-content-centers mb-5"> <!-- Center the cards in the row -->
+      <div class="col-lg-6 col-md-8 mb-3"> <!-- Adjust column sizes for larger width -->
+        <div class="cards h-100"> <!-- Maintain equal height for the cards -->
+          <div class="card-body">
+            <h5 class="card-title" style="color: yellow;">Biotechnology</h5>
+            <ul>
+                <li><strong>Gene Editing (CRISPR-Cas9):</strong>One of the most significant advancements in biotechnology is the CRISPR-Cas9 gene-editing tool.</li>
+                <li><strong>Personalized Medicine: </strong>Biotechnology has enabled the development of personalized medicine, where treatments and drugs are tailored to an individual's genetic makeup.</li>
+                <li><strong>Stem Cell Therapy:</strong>Stem cell research is leading to new treatments for a range of conditions, from spinal cord injuries to degenerative diseases like Parkinson's.</li>
+            <li><strong>Vaccine Development: </strong>The rapid development of vaccines, including the COVID-19 vaccines, showcases the power of biotechnology. mRNA vaccines, in particular, represent a new frontier in vaccine technology.</li>
+            </ul>
+            <a class="btn btn-outline-warning" role="button" aria-disabled="true">Explore for More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-8 mb-3"> <!-- Adjust column sizes for larger width -->
+        <div class="cards h-100"> <!-- Maintain equal height for the cards -->
+          <div class="card-body">
+            <h5 class="card-title" style="color: yellow;">5G Technology and Beyond:</h5>
+            <ul>
+                <li><strong>Speed and Connectivity: </strong>5G offers unprecedented speed and connectivity, enabling faster downloads, lower latency, and the ability to connect many more devices simultaneously.</li>
+                <li><strong>Impact on IoT (Internet of Things): </strong>5G is set to revolutionize IoT by allowing a massive number of devices to be interconnected, from smart homes to autonomous vehicles.</li>
+                <li><strong>Telecommunications Advancements:</strong>5G enhances mobile broadband services, supporting high-definition video streaming, virtual reality, and real-time gaming.</li>
+                <li><strong>6G and Future Networks:</strong>While 5G is still being rolled out globally, research into 6G is already underway. 6G aims to offer even faster speeds, improved latency, and more advanced capabilities.</li>
+                   
+            </ul>
+            <a class="btn btn-outline-warning" role="button" aria-disabled="true">Explore for More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+<!---------innovative solution-->
+<style>
+    .card-square {
+        position: relative;
+        width: 100%; /* Adjust the width as needed */
+        padding-top: 40%; /* Aspect ratio: 1:1 (Square) */
+        border: 1px solid #ccc;
+        margin: auto; /* Center the card */
+    }
+    .card-square .row {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .card-square .img-fluid {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .card-body {
+        background-color: #007bff; /* Blue background */
+        color: white; /* Text color for contrast */
+        padding: 15px;
+    }
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center content vertically */
+        height: 100%;
+        text-align: center; /* Center text horizontally */
+    }
+    .text-container .card-title,
+    .text-container .card-text {
+        margin: 0;
+    }
+    .text-container .btn {
+        align-self: center; /* Center button horizontally */
+        margin-top: 10px; /* Space between text and button */
+        border: 2px solid #ffc107; /* Yellow outline */
+        color: #ffc107; /* Yellow text color */
+        background-color: transparent; /* Transparent background */
+    }
+    .text-container .btn:hover {
+        background-color: #ffc107; /* Yellow background on hover */
+        color: #000; /* Black text color on hover for contrast */
+    }
+    .card-titles {
+        color: yellow;
+        font-size: 30px;
+        font-family: Castellar;
+    }
+    .card-text {
+        font-family: Book Antiqua;
+        text-align: justify;
+    }
+    .footer-icons {
+        display: flex;
+        justify-content: center; /* Center icons horizontally */
+        gap: 20px; /* Space between icons */
+        margin-top: 20px; /* Space above the footer */
+    }
+    .footer-icons i {
+        font-size: 24px; /* Adjust the size of icons */
+        color: #ffffff; /* Icon color */
+    }
+
+    @media (max-width: 576px) {
+        .card-titles {
+            font-size: 24px; /* Reduce font size on small devices */
+        }
+    }
+</style>
+
+<div class="card card-square mb-3">
+    <div class="row g-0 h-100">
+        <!-- Image Column (50% Width) -->
+        <div class="col-md-6">
+            <img src="{% static 'images/prog.jpg' %}" class="img-fluid rounded-start" alt="prog.jpg">
+        </div>
+        <!-- Text Content Column (50% Width) -->
+        <div class="col-md-6 d-flex flex-column">
+            <div class="card-body text-container">
+                <h5 class="card-titles">Innovative Solutions</h5>
+                <p class="card-text">Discover cutting-edge technology solutions that can transform your business. Our innovations are designed to enhance productivity, security, and scalability across various industries.</p>
+                <p class="card-text">At Julius Tech, we pride ourselves on delivering cutting-edge technology solutions designed to drive your business forward. Our innovative solutions are tailored to meet the specific needs of your industry, offering you a competitive edge and enhanced efficiency.</p>
+                <p class="card-text">
+                    <strong style="color: yellow; font-size: 20px;">Key Benefits:</strong><br>
+                    <ul style="text-align: justify;">
+                        <li><strong>Increased Productivity:</strong> Streamline operations and reduce manual effort with our advanced technology.</li>
+                        <li><strong>Enhanced Security:</strong> Protect your data with robust security measures and real-time monitoring.</li>
+                        <li><strong>Scalability:</strong> Easily scale your solutions as your business grows, ensuring long-term success.</li>
+                        <li><strong>Customizable Solutions:</strong> Tailor our technology to fit your unique business requirements and workflows.</li>
+                    </ul>
+                </p>
+                <button type="button" class="btn btn-outline-warning">Learn More</button>
+                <!-- Footer Icons -->
+                <div class="footer-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#"><i class="bi bi-google"></i></a>
+                    <a href="#"><i class="bi bi-envelope"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

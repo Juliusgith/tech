@@ -1,0 +1,273 @@
+.banner{
+    width: 100%;
+    min-height: 60vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    0% { background-image:  url('images/digital.jpg'); }
+    33% { background-image: url('images/Network.jpg'); }
+    66% { background-image: url('images/developer.jpg'); }
+    100% { background-image: url('images/AI.jpg'); }
+}
+
+/* Custom Navbar Background Color */
+.custom-navbar {
+    background-color: blue !important;
+}
+
+/* Navbar Link Colors and Hover Effects */
+.navbar-nav .nav-link {
+    color: white !important; /* Default link color */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: yellow !important; /* Hover color */
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    background-color: blue !important; /* Background color for dropdown */
+}
+
+.dropdown-menu .dropdown-item {
+    color: white !important; /* Default color for dropdown items */
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: darkblue !important; /* Background color on hover */
+    color: yellow !important; /* Color of text on hover */
+}
+
+/* Adjust the color of the navbar brand */
+.navbar-brand {
+    color: yellow !important; /* Default color */
+}
+
+.navbar-brand:hover {
+    color: lightyellow !important; /* Color on hover */
+}
+
+.gradient-text-1 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.gradient-text-2 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.ptn {
+    font-size: 1.5rem;
+    color: #fff; /* White color for the paragraph */
+}
+
+
+.marquee-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust the height to fit two rows */
+}
+
+.marquee {
+    display: flex;
+    flex-direction: column; /* Align marquee rows vertically */
+    height: 100%;
+}
+
+.marquee-row {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    width: 200%; /* Ensure rows span across the container */
+}
+
+.left-to-right {
+    animation: scroll-left-to-right 60s linear infinite; /* Slower speed for left-to-right scroll */
+}
+
+.right-to-left {
+    animation: scroll-right-to-left 60s linear infinite; /* Slower speed for right-to-left scroll */
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 350px; /* Set card width */
+    height: 600px; /* Set card height */
+    margin-right: 20px; /* Space between cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire card without distortion */
+}
+
+@keyframes scroll-left-to-right {
+    0% { transform: translateX(-50%); } /* Start from left */
+    100% { transform: translateX(0); }  /* End at the right */
+}
+
+@keyframes scroll-right-to-left {
+    0% { transform: translateX(0); }   /* Start from right */
+    100% { transform: translateX(-50%); } /* End at the left */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        width: 150px; /* Adjust card width for smaller screens */
+        height: 150px; /* Adjust card height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 120px; /* Further adjust card width for very small screens */
+        height: 120px; /* Further adjust card height for very small screens */
+    }
+
+    .left-to-right, .right-to-left {
+        animation: scroll-left-to-right 90s linear infinite, scroll-right-to-left 90s linear infinite; /* Even slower speed for small screens */
+    }
+}
+
+
+.card-fixed-size {
+    transition: transform 0.2s ease-in-out;
+}
+
+.img-zoom {
+    transition: transform 0.2s ease-in-out;
+}
+
+.img-zoom:hover {
+    transform: scale(1.05);
+}
+
+.overlay-text {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+
+/* Increase the card width to occupy 50% of the page */
+.cards {
+    width: 100%; /* Ensure the card takes full width of the column */
+    height: 600px; /* Increase height to fit more content */
+  }
+  
+  /* Ensure cards have consistent height and are centered */
+  .row.justify-content-centers {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .col-lg-6, .col-md-8 {
+    margin-bottom: 20px; /* Adds space between the cards vertically */
+  }
+  
+  .container {
+    width: 100%; /* Full width of the page */
+  }
+  
+  /* Optional: Add padding to the body for better spacing */
+  .card-body {
+    padding: 2rem;
+    overflow: auto; /* Allow scrolling if the content exceeds the card's height */
+  }
+  
+
+
+/*--------about------*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+}
+
+.img-fluid {
+    max-width: 80%;
+    height: auto;
+}
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.motto-title {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #666;
+}
+
+.motto-text {
+    font-size: 3rem;
+    color: #b22222;
+    font-weight: bold;
+}
+
+.motto-section p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+/*------blog----*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+.bg-primary {
+    background-color: #002366 !important;
+}
+
+.text-primary {
+    color: #002366 !important;
+}
+
+.btn-primary {
+    background-color: #0066cc;
+    border: none;
+}
