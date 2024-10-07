@@ -111,7 +111,7 @@
 .card {
     flex: 0 0 auto;
     width: 350px; /* Set card width */
-    height: 600px; /* Set card height */
+    height: 500px; /* Set card height */
     margin-right: 20px; /* Space between cards */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
 }
